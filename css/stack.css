@@ -1,0 +1,32 @@
+.stack {
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-grey);
+    max-width: 806px;
+    margin: 12px auto 0;
+  }
+}
+.stack_items {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+.stack_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0d0d0d;
+  width: 130px;
+  height: 173px;
+  span {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

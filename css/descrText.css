@@ -1,0 +1,30 @@
+.descrText {
+  padding: 80px;
+  backdrop-filter: blur(98.4000015258789px);
+  background: linear-gradient(90deg, rgba(71, 55, 83, 0.7) 0%, rgba(39, 43, 75, 0.7) 100%);
+  display: grid;
+  grid-template-columns: 387px 627px;
+  gap: 80px;
+}
+.descrText_left {
+  h3 {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--text-white);
+  }
+  span {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: var(--text-dark-grey);
+  }
+}
+.descrText_right {
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--text-grey);
+  }
+}
