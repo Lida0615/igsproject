@@ -1,18 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-:root {
-  --main-col: rgba(154, 13, 236, 1);
-  --text-white: rgba(255, 255, 255, 1);
-  --text-grey: rgba(160, 160, 160, 1);
-  --bg-black: rgba(13, 13, 13, 1);
-  --bg-grey: rgba(31, 31, 31, 1);
-}
+@import url(./variables.css);
+@import url(./menu.css);
+@import url(./services.css);
+@import url(./stack.css);
+@import url(./descrText.css);
+@import url(./categories.css);
+@import url(./faq.css);

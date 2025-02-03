@@ -1,0 +1,56 @@
+.FAQ_item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s cubic-bezier(0, 1, 0, 1);
+}
+
+.FAQ_item__control:checked ~ .FAQ_item__content {
+  transition-timing-function: ease-in-out;
+  max-height: 800px;
+}
+
+/* Hiding elements in an accessible way */
+.hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Theming CSS */
+
+.FAQ_item {
+  border: 1px solid #1f1f1f;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+.FAQ_item__label {
+  /* display: block; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+}
+
+.FAQ_item__content {
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.FAQ_item__label::after {
+  content: "﹀";
+}
+
+.FAQ_item__control:checked ~ .FAQ_item__label::after {
+  content: "︿";
+}
