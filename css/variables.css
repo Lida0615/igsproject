@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 :root {
   --main-col: rgba(154, 13, 236, 1);
+  --menu-col: rgba(96, 9, 188, 1);
+  --menu-back-col: rgba(96, 9, 188, 0.2);
   --text-white: #fff;
   --text-grey: #dcdcdc;
   --text-dark-grey: #a0a0a0;
   --bg-black: rgba(13, 13, 13, 1);
   --bg-grey: rgba(31, 31, 31, 1);
   --font-family: "Manrope", serif;
+  --space-btwn-lft-menu-items:10px;
 }
 
 * {
