@@ -1,3 +1,12 @@
+@keyframes go-left-right { /* назовём анимацию: "go-left-right" */
+    from {
+        background: linear-gradient(90.00deg, var(--menu-col1), var(--menu-col2) 150%);
+    }
+    to {
+        background: linear-gradient(90.00deg, var(--menu-col1), var(--menu-col1) 500%);
+    }
+}
+
 a.menu-link {
     text-decoration-line: none;
 }
@@ -13,7 +22,7 @@ a.menu-text {
 }
 
 .left-menu-block {
-    position: relative;
+    position: sticky;
     width: 160px;
     height: 470px;
     display: flex;
@@ -21,7 +30,7 @@ a.menu-text {
     justify-content: center;
     align-items: center;
     left: 50px;
-    top: 451px;
+    top: 150px;
 }
 
 .menu-block--items {
@@ -34,16 +43,29 @@ a.menu-text {
     align-items: center;
     gap: 12px;
     padding: 20px 0 20px 26px;
-    background: var(--menu-col);
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, var(--menu-col1), var(--menu-col1), var(--menu-col1), var(--menu-col2));
     flex: none;
     order: 0;
     margin-top: var(--space-btwn-lft-menu-items);
     z-index: calc(1 * var(--i));
+    moz-transition: all var(--menu-dly-anim) ease-in-out;
+    -o-transition: all var(--menu-dly-anim) ease-in-out;
+    -webkit-transition: all var(--menu-dly-anim) ease-in-out;
+    transition: all var(--menu-dly-anim) ease-in-out;
+    background-position: 100% 0;
 }
 
 .menu-block--items:hover {
-    /*transform: translateY(-30px);*/
-    background: rgba(133, 111, 255, 1);
+    background-position: 50% 0;
+    moz-transition: all var(--menu-dly-anim) ease-in-out;
+    -o-transition: all var(--menu-dly-anim) ease-in-out;
+    -webkit-transition: all var(--menu-dly-anim) ease-in-out;
+    transition: all var(--menu-dly-anim) ease-in-out;
+}
+
+.menu-block--items:focus {
+    outline: none;
 }
 
 .menu-block--items::before {
@@ -61,9 +83,9 @@ a.menu-text {
 }
 
 .menu-block--items:hover::before {
-    background: rgba(133, 111, 255, 0.6);
+    background: var(--menu-back-hov-col);
     filter: brightness(0.7);
-    box-shadow: 1px 1px 30px 6px rgba(133, 111, 255, 0.8);
+    box-shadow: 1px 1px 30px 6px var(--menu-back-hov-col);
     transition: 0.3s;
 }
 
@@ -82,8 +104,8 @@ a.menu-text {
 }
 
 .menu-block--items:hover::after {
-    background: rgba(133, 111, 255, 0.5);
+    background: var(--menu-back-hov-col);
     filter: brightness(0.9);
-    box-shadow: 1px 1px 30px 5px rgba(133, 111, 255, 0.8);
+    box-shadow: 1px 1px 30px 5px var(--menu-back-hov-col);
     transition: 0.3s;
 }

@@ -1,46 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 :root {
-  --main-col: rgba(154, 13, 236, 1);
-  --menu-col: rgba(96, 9, 188, 1);
-  --menu-back-col: rgba(96, 9, 188, 0.2);
-  --text-white: #fff;
-  --text-grey: #dcdcdc;
-  --text-dark-grey: #a0a0a0;
-  --bg-black: rgba(13, 13, 13, 1);
-  --bg-grey: rgba(31, 31, 31, 1);
-  --font-family: "Manrope", serif;
-  --space-btwn-lft-menu-items:10px;
+    --main-col: rgba(154, 13, 236, 1);
+    --menu-col1: rgba(96, 9, 188, 0.7);
+    --menu-col2: rgba(5, 9, 129, 0.7);
+    --menu-back-col: rgba(96, 9, 188, 0.2);
+    --menu-back-hov-col: rgba(112, 38, 190, 0.6);
+    --menu-top-hov-col: rgba(112, 38, 190, 1);
+    --text-white: #fff;
+    --text-grey: #dcdcdc;
+    --text-dark-grey: #a0a0a0;
+    --bg-black: rgba(13, 13, 13, 1);
+    --bg-grey: rgba(31, 31, 31, 1);
+    --font-family: "Manrope", serif;
+    --space-btwn-lft-menu-items: 10px;
+    --menu-dly-anim: 1s;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
+
 body {
-  background-color: #000000;
-  color: var(--text-white);
-  font-family: var(--font-family);
+    background-color: #000000;
+    color: var(--text-white);
+    font-family: var(--font-family);
 }
+
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 a {
-  text-decoration: none;
-  color: var(--text-white);
+    text-decoration: none;
+    color: var(--text-white);
 }
+
 .wrapper {
-  max-width: 1254px;
-  margin: 0 auto;
-  padding: 0 10px;
+    max-width: 1254px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
+
 h2 {
-  font-weight: 700;
-  font-size: 40px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 56px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 56px;
 }
+
 section {
-  margin-top: 156px;
+    margin-top: 156px;
 }
