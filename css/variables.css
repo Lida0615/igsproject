@@ -7,12 +7,21 @@
   --bg-black: rgba(13, 13, 13, 1);
   --bg-grey: rgba(31, 31, 31, 1);
   --font-family: "Manrope", serif;
+  --menu-col1: rgba(71, 55, 83, 0.9);
+  --menu-col2: rgba(39, 43, 75, 0.9);
+  --menu-back-col: rgba(96, 9, 188, 0.2);
+  --menu-back-hov-col:  rgba(71, 55, 83, 0.9);
+  --menu-top-hov-col: rgba(71, 55, 83, 0.9);
+  --space-btwn-lft-menu-items: 10px;
+  --menu-dly-anim: 1s;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 body {
   background-color: #000000;
