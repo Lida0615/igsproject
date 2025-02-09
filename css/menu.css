@@ -31,7 +31,6 @@ a.menu-text {
     align-items: center;
     left: 50px;
     top: 150px;
-    z-index: 1;
 }
 
 .menu-block--items {
