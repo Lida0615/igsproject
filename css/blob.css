@@ -17,7 +17,8 @@ html {
 .blob {
   position: absolute;
   border-radius: 50%;
-  background: rgba(138, 43, 226, 0.3); /* Фиолетовый цвет */
+  /*background: rgba(138, 43, 226, 0.3); !* Фиолетовый цвет *!*/
+  background: linear-gradient(90.00deg, rgba(135, 65, 178, 0.5),rgba(5, 9, 129, 0.35) 100%);
   filter: blur(100px);
   transition: transform 10s linear, width 6s ease-in-out, height 6s ease-in-out;
 }
