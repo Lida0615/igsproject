@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 .FAQ {
 }
 
+=======
+>>>>>>> f338e4f9238de489e660c473f3302962deb7c813
 .FAQ_item__content {
   max-height: 0;
   overflow: hidden;
@@ -12,6 +15,10 @@
   max-height: 800px;
 }
 
+<<<<<<< HEAD
+=======
+/* Hiding elements in an accessible way */
+>>>>>>> f338e4f9238de489e660c473f3302962deb7c813
 .hidden--visually {
   border: 0;
   clip: rect(1px 1px 1px 1px);
@@ -24,6 +31,11 @@
   width: 1px;
 }
 
+<<<<<<< HEAD
+=======
+/* Theming CSS */
+
+>>>>>>> f338e4f9238de489e660c473f3302962deb7c813
 .FAQ_item {
   border: 1px solid #1f1f1f;
   border-radius: 3px;
