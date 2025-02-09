@@ -28,6 +28,7 @@
     color: var(--text-grey);
   }
 }
+<<<<<<< HEAD
 
 @media (max-width: 1024px) {
   .descrText {
@@ -41,3 +42,5 @@
     gap: 12px;
   }
 }
+=======
+>>>>>>> f338e4f9238de489e660c473f3302962deb7c813

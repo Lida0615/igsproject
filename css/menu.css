@@ -1,3 +1,17 @@
+<<<<<<< HEAD
 
 
 
+=======
+header {
+  display: none;
+  nav {
+    ul {
+      li {
+        a {
+        }
+      }
+    }
+  }
+}
+>>>>>>> f338e4f9238de489e660c473f3302962deb7c813

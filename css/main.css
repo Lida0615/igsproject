@@ -1,10 +1,16 @@
 @import url(./variables.css);
+<<<<<<< HEAD
 @import url(./blob.css);
 @import url(./menu.css);
 @import url(./header.css);
 @import url(./services.css);
 @import url(./stack.css);
 @import url(./tabs.css);
+=======
+@import url(./menu.css);
+@import url(./services.css);
+@import url(./stack.css);
+>>>>>>> f338e4f9238de489e660c473f3302962deb7c813
 @import url(./descrText.css);
 @import url(./categories.css);
 @import url(./faq.css);
