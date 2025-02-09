@@ -1,0 +1,23 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.blobs-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(138, 43, 226, 0.3); /* Фиолетовый цвет */
+  filter: blur(100px);
+  transition: transform 10s linear, width 6s ease-in-out, height 6s ease-in-out;
+}
