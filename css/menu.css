@@ -1,4 +1,4 @@
-@keyframes go-left-right { /* назовём анимацию: "go-left-right" */
+@keyframes go-left-right {
     from {
         background: linear-gradient(90.00deg, var(--menu-col1), var(--menu-col2) 150%);
     }

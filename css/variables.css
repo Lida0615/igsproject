@@ -14,6 +14,7 @@
   --menu-top-hov-col: rgba(71, 55, 83, 0.9);
   --space-btwn-lft-menu-items: 10px;
   --menu-dly-anim: 1s;
+  --blink-star-delay: 5.5s
 }
 
 * {
