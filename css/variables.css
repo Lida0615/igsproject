@@ -10,11 +10,11 @@
   --menu-col1: rgba(71, 55, 83, 0.9);
   --menu-col2: rgba(39, 43, 75, 0.9);
   --menu-back-col: rgba(96, 9, 188, 0.2);
-  --menu-back-hov-col:  rgba(71, 55, 83, 0.9);
+  --menu-back-hov-col: rgba(71, 55, 83, 0.9);
   --menu-top-hov-col: rgba(71, 55, 83, 0.9);
   --space-btwn-lft-menu-items: 10px;
   --menu-dly-anim: 1s;
-  --blink-star-delay: 5.5s
+  --blink-star-delay: 5.5s;
 }
 
 * {
@@ -48,6 +48,6 @@ h2 {
   color: #fff;
   margin-bottom: 56px;
 }
-section {
+section ~ section {
   margin-top: 156px;
 }
