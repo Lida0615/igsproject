@@ -1,0 +1,12 @@
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  display: none;
+
+  img {
+    border-radius: 10px;
+  }
+}

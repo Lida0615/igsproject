@@ -44,44 +44,44 @@ function initializeTabs() {
 
 initializeTabs();
 
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.querySelector(".blobs-container");
-  const numBlobs = 30;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const container = document.querySelector(".blobs-container");
+//   const numBlobs = 30;
 
-  function updateContainerHeight() {
-    container.style.height = `${document.documentElement.scrollHeight}px`; // Подстраиваемся под весь контент
-  }
+//   function updateContainerHeight() {
+//     container.style.height = `${document.documentElement.scrollHeight}px`; // Подстраиваемся под весь контент
+//   }
 
-  const blobs = [];
+//   const blobs = [];
 
-  for (let i = 0; i < numBlobs; i++) {
-    const blob = document.createElement("div");
-    blob.classList.add("blob");
+//   for (let i = 0; i < numBlobs; i++) {
+//     const blob = document.createElement("div");
+//     blob.classList.add("blob");
 
-    const size = Math.random() * 200 + 150;
-    blob.style.width = `${size}px`;
-    blob.style.height = `${size}px`;
-    blob.style.top = `${Math.random() * document.documentElement.scrollHeight}px`;
-    blob.style.left = `${Math.random() * 100}vw`;
+//     const size = Math.random() * 200 + 150;
+//     blob.style.width = `${size}px`;
+//     blob.style.height = `${size}px`;
+//     blob.style.top = `${Math.random() * document.documentElement.scrollHeight}px`;
+//     blob.style.left = `${Math.random() * 100}vw`;
 
-    container.appendChild(blob);
-    blobs.push(blob);
-  }
+//     container.appendChild(blob);
+//     blobs.push(blob);
+//   }
 
-  function animateBlobs() {
-    blobs.forEach(blob => {
-      const newX = Math.random() * 100;
-      const newY = Math.random() * document.documentElement.scrollHeight;
+//   function animateBlobs() {
+//     blobs.forEach(blob => {
+//       const newX = Math.random() * 100;
+//       const newY = Math.random() * document.documentElement.scrollHeight;
 
-      blob.style.transform = `translate(${newX - 50}vw, ${newY - parseInt(blob.style.top)}px)`;
-    });
+//       blob.style.transform = `translate(${newX - 50}vw, ${newY - parseInt(blob.style.top)}px)`;
+//     });
 
-    setTimeout(animateBlobs, 6000);
-  }
+//     setTimeout(animateBlobs, 6000);
+//   }
 
-  updateContainerHeight();
-  window.addEventListener("resize", updateContainerHeight);
-  window.addEventListener("scroll", updateContainerHeight);
+//   updateContainerHeight();
+//   window.addEventListener("resize", updateContainerHeight);
+//   window.addEventListener("scroll", updateContainerHeight);
 
-  animateBlobs();
-});
+//   animateBlobs();
+// });
