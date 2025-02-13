@@ -22,7 +22,7 @@ a.menu-text {
 }
 
 .left-menu-block {
-    position: sticky;
+    position: fixed;
     width: 160px;
     height: 470px;
     display: flex;
@@ -85,8 +85,7 @@ a.menu-text {
 .menu-block--items:hover::before {
     background: var(--menu-back-hov-col);
     filter: brightness(0.7);
-    box-shadow: 1px 1px 30px 6px var(--menu-back-hov-col);
-    transition: 0.3s;
+    box-shadow: 1px 1px 30px 5px var(--menu-back-hov-col);
 }
 
 .menu-block--items::after {
@@ -107,7 +106,6 @@ a.menu-text {
     background: var(--menu-back-hov-col);
     filter: brightness(0.9);
     box-shadow: 1px 1px 30px 5px var(--menu-back-hov-col);
-    transition: 0.3s;
 }
 
 
