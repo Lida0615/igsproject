@@ -1,0 +1,124 @@
+.contact {
+  display: none;
+}
+.contact_wrapp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  p {
+    max-width: 483px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 160%;
+    color: #dcdcdc;
+  }
+}
+
+.form-container {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 22px;
+}
+input,
+select {
+  width: 100%;
+  padding: 20px 120px 20px 20px;
+
+  border: none;
+
+  background: #1f1f1f;
+  color: #fff;
+}
+select {
+  color: #a0a0a0;
+  font-size: 22px;
+}
+input::placeholder {
+  color: #a0a0a0;
+  font-size: 22px;
+}
+
+button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 20px;
+  background: #6a1b9a;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #57008a;
+}
+/* checkbox */
+.checkbox-wrapper-23 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+.checkbox-wrapper-23 input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-wrapper-23 input:checked + label svg path {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-23 input:focus + label {
+  transform: scale(1.03);
+}
+
+.checkbox-wrapper-23 input + label {
+  display: block;
+  border: 2px solid #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-23 input + label:active {
+  transform: scale(1.05);
+  border-radius: 12px;
+}
+
+.checkbox-wrapper-23 input + label svg {
+  pointer-events: none;
+  padding: 5%;
+}
+
+.checkbox-wrapper-23 input + label svg path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 101;
+  transition: all 250ms cubic-bezier(1, 0, 0.37, 0.91);
+}
+
+@media (max-width: 1024px) {
+  .content.active {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .content.active {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    justify-items: center;
+  }
+}

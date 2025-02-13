@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 387px 627px;
   gap: 80px;
+  display: none;
 }
 .descrText_left {
   h3 {
