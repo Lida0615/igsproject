@@ -16,7 +16,7 @@ function createStars() {
       y: Math.random() * y * 0.6,
       o: Math.random(),
       r: Math.random(),
-      s: 0.0125,
+      s: 0.01,
     })
     if (randomSize > .1) {
       context.shadowBlur = Math.floor((Math.random() * 15))
@@ -30,14 +30,14 @@ function drawing() {
   requestAnimationFrame(drawing)
   context.clearRect(0, 0, innerWidth, innerHeight)
   for (var i = 0; i <= nStar; i++) {
-    var e = stars[i]
-    if (e.o > 1 || e.o < 0) {
-      e.s = -e.s
+    var star = stars[i]
+    if (star.o > 1 || star.o < 0) {
+      star.s = -star.s
     }
-    e.o += e.s
+    star.o += star.s
     context.beginPath()
-    context.arc(e.x, e.y, e.r, 0, Math.PI * 2, false)
-    context.strokeStyle = 'rgba(255, 255, 255, ' + e.o + ')'
+    context.arc(star.x, star.y, star.r, 0, Math.PI * 2, false)
+    context.strokeStyle = 'rgba(255, 255, 255, ' + star.o + ')'
     context.stroke()
   }
 }
@@ -45,4 +45,8 @@ function drawing() {
 addEventListener('load', () => {
   createStars()
   drawing()
+})
+
+addEventListener('resize', () => {
+  location.reload();
 })
