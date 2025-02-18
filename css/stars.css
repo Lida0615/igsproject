@@ -1,22 +1,33 @@
-@keyframes blink {
-    0%   { opacity: 0;}
-    10%  { opacity: 0.2;}
-    20%  { opacity: 0.4;}
-    30%  { opacity: 0.6;}
-    40%  { opacity: 0.8;}
-    50%  { opacity: 1;}
-    60%  { opacity: 0.8;}
-    70%  { opacity: 0.6;}
-    80%  { opacity: 0.4;}
-    90%  { opacity: 0.2;}
-    100% { opacity: 0;}
-}
+/*@keyframes blink {*/
+/*    0%   { opacity: 0.0;}*/
+/*    10%  { opacity: 0.2;}*/
+/*    20%  { opacity: 0.4;}*/
+/*    30%  { opacity: 0.6;}*/
+/*    40%  { opacity: 0.8;}*/
+/*    50%  { opacity: 1.0;}*/
+/*    60%  { opacity: 0.8;}*/
+/*    70%  { opacity: 0.6;}*/
+/*    80%  { opacity: 0.4;}*/
+/*    90%  { opacity: 0.2;}*/
+/*    92%  { opacity: 0.0;}*/
+/*    94%  { opacity: 0.0;}*/
+/*    96%  { opacity: 0.0;}*/
+/*    98%  { opacity: 0.0;}*/
+/*    100% { opacity: 0.0;}*/
+/*}*/
 
-.star{
-    position: relative;
-    width: 16px;
-    height: 16px;
-    background: url("../img/star_p_16.png") no-repeat center;
-    opacity: 0;
-    animation: blink var(--blink-star-delay) infinite;
+/*.star{*/
+/*    position: relative;*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    background: url("../img/star_p_16.png") no-repeat center;*/
+/*    opacity: 0;*/
+/*    animation: blink var(--blink-star-delay) infinite;*/
+/*}*/
+
+
+#star-sky {
+    background: url("../img/Hero_img1.png") no-repeat center/ cover;
+    height: 100dvh;
+    width: 100%;
 }

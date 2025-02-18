@@ -1,7 +1,9 @@
 header {
+
   /* display: none; */
   width: 99vw;
   height: 100vh;
 
   background: url("../img/Hero_img1.png") no-repeat center/ cover;
+
 }

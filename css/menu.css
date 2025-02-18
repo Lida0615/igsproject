@@ -8,17 +8,17 @@
 }
 
 a.menu-link {
-  text-decoration-line: none;
+    text-decoration-line: none;
 }
 
 a.menu-text {
-  color: white;
-  font-family: var(--font-family);
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0;
-  text-align: left;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
 }
 
 .left-menu-block {
