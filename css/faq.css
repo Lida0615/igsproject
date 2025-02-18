@@ -1,5 +1,5 @@
 .FAQ {
-  display: none;
+  /* display: none; */
 }
 
 .FAQ_item__content {
@@ -49,9 +49,12 @@
 }
 
 .FAQ_item__label::after {
-  content: "﹀";
+  content: url("../img/arrow.svg");
+  transition: 1s;
 }
 
 .FAQ_item__control:checked ~ .FAQ_item__label::after {
-  content: "︿";
+  content: url("../img/arrow.svg");
+  transform: rotate(180deg);
+  transition: 1s;
 }

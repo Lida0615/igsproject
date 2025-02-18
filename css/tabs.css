@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+  /* display: none; */
 }
 
 .tab {
@@ -23,10 +24,17 @@
 }
 
 .content {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0s;
 }
 
 .content.active {
+  transition: 1s;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
@@ -61,6 +69,14 @@
   .content.active {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    opacity: 1;
+    visibility: visible;
+  }
+  .tab {
+    font-size: 24px;
+  }
+  .tab_block h3 {
+    font-size: 24px;
   }
 }
 
@@ -69,5 +85,13 @@
     grid-template-columns: 1fr;
     gap: 12px;
     justify-items: center;
+    opacity: 1;
+    visibility: visible;
+  }
+  .tab {
+    font-size: 20px;
+  }
+  .tab_block h3 {
+    font-size: 20px;
   }
 }

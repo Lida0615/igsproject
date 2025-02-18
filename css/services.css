@@ -28,8 +28,13 @@
   }
 }
 .services_item:hover {
-  background: linear-gradient(90deg, rgba(71, 55, 83, 0.7) 0%, rgba(39, 43, 75, 0.7) 100%);
+  --myColor1: #f00;
+  --myColor2: yellow;
+}
+
+.services_item:hover {
   transition: 1s;
+  background: linear-gradient(90deg, rgba(71, 55, 83, 0.7) 0%, rgba(39, 43, 75, 0.7) 100%);
 }
 
 @media (max-width: 1024px) {

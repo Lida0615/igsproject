@@ -117,3 +117,50 @@ a.menu-text {
   box-shadow: 1px 1px 30px 5px var(--menu-back-hov-col);
   transition: 0.3s;
 }
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .menu-btn {
+    display: block;
+    width: fit-content;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: 1px solid #000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  /* Само меню */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* width: 250px; */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.155);
+    transition: left 0.3s;
+    padding-top: 60px;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s;
+  }
+
+  .menu a:hover {
+    background: #444;
+  }
+}

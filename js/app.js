@@ -44,6 +44,41 @@ function initializeTabs() {
 
 initializeTabs();
 
+// burger
+(function () {
+  const menu = document.getElementById("menu");
+  const menuBtn = document.querySelector(".menu-btn");
+  const menuLinks = document.querySelectorAll(".menu-link");
+
+  function toggleMenu() {
+    menu.classList.toggle("active");
+  }
+
+  function closeMenuAndScroll(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      menu.classList.remove("active");
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }
+
+  function closeMenuOnClickOutside(event) {
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+      menu.classList.remove("active");
+    }
+  }
+
+  menuBtn.addEventListener("click", toggleMenu);
+  menuLinks.forEach(link => link.addEventListener("click", closeMenuAndScroll));
+  document.addEventListener("click", closeMenuOnClickOutside);
+})();
+
 // document.addEventListener("DOMContentLoaded", () => {
 //   const container = document.querySelector(".blobs-container");
 //   const numBlobs = 30;
