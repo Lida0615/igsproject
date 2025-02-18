@@ -1,11 +1,11 @@
 .descrText {
   padding: 80px;
-  backdrop-filter: blur(98.4000015258789px);
+  /* backdrop-filter: blur(98.4000015258789px); */
   background: linear-gradient(90deg, rgba(71, 55, 83, 0.7) 0%, rgba(39, 43, 75, 0.7) 100%);
   display: grid;
-  grid-template-columns: 387px 627px;
+  grid-template-columns: 387px minmax(min-content, 627px);
   gap: 80px;
-  display: none;
+  /* display: none; */
 }
 .descrText_left {
   h3 {
@@ -33,6 +33,16 @@
 @media (max-width: 1024px) {
   .descrText {
     grid-template-columns: 1fr;
+    padding: 40px;
+    gap: 10px;
+  }
+  .descrText_left {
+    h3 {
+      font-size: 30px;
+    }
+  }
+  .descrText_right {
+    text-align: justify;
   }
 }
 
@@ -40,5 +50,10 @@
   .content.active {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+  .descrText_left {
+    h3 {
+      font-size: 26px;
+    }
   }
 }
