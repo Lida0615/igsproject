@@ -48,6 +48,30 @@ h2 {
   color: #fff;
   margin-bottom: 56px;
 }
-section ~ section {
+section {
   margin-top: 156px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  section {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }

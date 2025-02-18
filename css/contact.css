@@ -23,10 +23,13 @@
   gap: 20px;
   font-size: 22px;
 }
+input {
+  font-size: 22px;
+}
 input,
 select {
   width: 100%;
-  padding: 20px 120px 20px 20px;
+  padding: 30px 120px 20px 20px;
 
   border: none;
 
@@ -39,7 +42,10 @@ select {
 }
 input::placeholder {
   color: #a0a0a0;
-  font-size: 22px;
+  font-size: 26px;
+}
+input:focus-within {
+  outline: 0;
 }
 
 button {
@@ -95,6 +101,7 @@ button:hover {
 .checkbox-wrapper-23 input + label svg {
   pointer-events: none;
   padding: 5%;
+  margin-bottom: 5px;
 }
 
 .checkbox-wrapper-23 input + label svg path {

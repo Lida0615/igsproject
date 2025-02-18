@@ -12,25 +12,29 @@
           referrerpolicy="no-referrer"/>
 </head>
 
-<body>
-
-  <div class="left-menu-block">
-    <div style="--i:6;" class="menu-block--items"><a href="#" class="menu-link menu-text"><span></span>Главная</a></div>
-    <div style="--i:5;" class="menu-block--items"><a href="#" class="menu-link menu-text"><span></span>Наши услуги</a></div>
-    <div style="--i:4;" class="menu-block--items"><a href="#" class="menu-link menu-text"><span></span>Портфолио</a></div>
-    <div style="--i:3;" class="menu-block--items"><a href="#" class="menu-link menu-text"><span></span>Отзывы</a></div>
-    <div style="--i:2;" class="menu-block--items"><a href="#" class="menu-link menu-text"><span></span>FAQ</a></div>
-    <div style="--i:1;" class="menu-block--items"><a href="#" class="menu-link menu-text"><span></span>Контакты</a></div>
+<body id='start'>
+  <div class="menu">
+    <button class="menu-btn">☰ </button>
+  <div class="left-menu-block menu" id="menu">
+    <div style="--i:6;" class="menu-block--items"><a href="#start" class="menu-link menu-text"><span></span>Главная</a></div>
+    <div style="--i:5;" class="menu-block--items"><a href="#services" class="menu-link menu-text"><span></span>Наши услуги</a></div>
+    <div style="--i:4;" class="menu-block--items"><a href="#portfolio" class="menu-link menu-text"><span></span>Портфолио</a></div>
+    <div style="--i:3;" class="menu-block--items"><a href="#reviews" class="menu-link menu-text"><span></span>Отзывы</a></div>
+    <div style="--i:2;" class="menu-block--items"><a href="#FAQ" class="menu-link menu-text"><span></span>FAQ</a></div>
+    <div style="--i:1;" class="menu-block--items"><a href="#contact" class="menu-link menu-text"><span></span>Контакты</a></div>
   </div>
+      
+</div>
 
   <header id="header">
-
+    <!-- <strong>Инновационные решения для вашего бизнеса</strong>
+<h1>Профессиональная веб-разработка: от дизайна до запуска</h1> -->
   </header>
 
   <div class="wrapper">
     <main>
       <div class="blobs-container"></div>
-      <section class="services">
+      <section id='services' class="services">
         <h2>Наши услуги</h2>
         <div class="services_items">
           <div class="services_item">
@@ -285,7 +289,7 @@
           </div>
         </div>
       </section>
-      <section class='portfolio'>
+      <section id='portfolio' class='portfolio'>
         <h2>Портфолио</h2>
         <div class="tab_wrapp">
           <div class="tabs">
@@ -334,6 +338,9 @@
       </section>
       <section class='categories'>
         <h2>Категории</h2>
+        <div class="categories_items">
+
+       
         <div class='categories_item'>
           <div class="categories_left">
             <h3>Одностраничный сайт</h3>
@@ -388,6 +395,7 @@
             <span>срок разработки: 15–20 дней</span>
           </div>
         </div>
+      </div>
       </section>
       <section class="descrText">
         <div class="descrText_left">
@@ -402,7 +410,7 @@
         </div>
 
       </section>
-      <section class='FAQ'>
+      <section id='FAQ' class='FAQ'>
         <h2>FAQ</h2>
         <div class="FAQ_items">
 
@@ -410,7 +418,7 @@
           <div class="FAQ_item">
             <input class="FAQ_item__control hidden--visually" id="FAQ_item" type="checkbox" />
             <label class="FAQ_item__label" for="FAQ_item">
-              FAQ_item
+              FAQ_item >
             </label>
 
             <div class="FAQ_item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam ipsa
@@ -432,7 +440,7 @@
         </div>
 
       </section>
-      <section class='contact'>
+      <section id='contact' class='contact'>
         <h2>Контакты</h2>
         <div class="contact_wrapp">
           <p>Мы свяжемся с вами в ближайшее время, ответим на все вопросы, а также предложим индивидуальные условия</p>
@@ -443,7 +451,11 @@
                 <option>Telegram</option>
                 <option>WhatsApp</option>
             </select>
-            <input type="tel" placeholder="+7 (999) 555-66-77" disabled>
+            <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="+7(000)000-00-00" />
             <input type="email" placeholder="Email">
             <!--  -->
             <div class="checkbox-wrapper-23">
@@ -462,7 +474,7 @@
         </form>
         </div>
       </section>
-      <section class="reviews">
+      <section id='reviews' class="reviews">
       <a href="#">
         <img src="./img/beget_ban.jpg" alt="">
 
@@ -494,10 +506,10 @@
           </ul>
     
         <div class="footer_socio">
-          <a href="tel:722828828282">+723082384</a>
+          <a href="tel:722828828282">+7 230 823 8412</a>
           <div> 
             <a href="#"><img src="./img/Group (1).svg" alt=""></a>
-            <a href="#"><img src="./img/Vector.svg" alt=""></a>
+            <a href="#"><img src="./img/telegram.svg" alt=""></a>
             <a href="#"><img src="./img/Group (2).svg" alt=""></a>
             <a href="#"><img src="./img/Vector (1).svg" alt=""></a>
           </div>
