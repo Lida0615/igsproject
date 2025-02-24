@@ -296,19 +296,15 @@
       <section id='portfolio' class='portfolio'>
         <h2>Портфолио</h2>
         <div class="tab_wrapp">
-          <div class="tabs">
-            <div class="tab active" data-tab="all">Все</div>
-            <div class="tab" data-tab="Сайт-визитка">Сайт-визитка</div>
-            <div class="tab" data-tab="Многостраничный сайт">Многостраничный сайт</div>
-            <div class="tab" data-tab="Корпоративный сайт">Корпоративный сайт</div>
-            <div class="tab" data-tab="Интернет-магазин">Интернет-магазин</div>
-          </div>
-
-          <div class="content active" id="all"></div>
-          <div class="content" id="Сайт-визитка"></div>
-          <div class="content" id="Многостраничный сайт"></div>
-          <div class="content" id="Корпоративный сайт"></div>
-          <div class="content" id="Интернет-магазин"></div>
+          <div class="tabs" id="categoryTabs">
+            <div class="tab active" data-category="all">Все</div>
+            <div class="tab" data-category="Сайт-визитка">Сайт-визитка</div>
+            <div class="tab" data-category="Многостраничный сайт">Многостраничный сайт</div>
+            <div class="tab" data-category="Корпоративный сайт">Корпоративный сайт</div>
+            <div class="tab" data-category="Интернет-магазин">Интернет-магазин</div>
+        </div>
+    
+        <div class="content" id="portfolio1"></div>
 
         </div>
 
@@ -521,7 +517,10 @@
       </div>
     </div>
   </footer>
+  
+
   <script src='./js/app.js'></script>
+<!-- <script src="./js/tabs.js"></script> -->
   <script src='js/stars.js'></script>
 </body>
 
