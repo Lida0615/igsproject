@@ -47,8 +47,7 @@ input::placeholder {
 input:focus-within {
   outline: 0;
 }
-
-button {
+.contact button {
   margin-top: 12px;
   width: 100%;
   padding: 20px;

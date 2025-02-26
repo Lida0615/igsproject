@@ -122,3 +122,4 @@ document.getElementById("categoryTabs").addEventListener("click", event => {
   menuLinks.forEach(link => link.addEventListener("click", closeMenuAndScroll));
   document.addEventListener("click", closeMenuOnClickOutside);
 })();
+
