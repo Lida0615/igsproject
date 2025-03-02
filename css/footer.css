@@ -82,6 +82,9 @@ footer {
 
 @media (max-width: 768px) {
   .footer_wrap {
-    grid-template-columns: 1fr;
+    grid-template-columns:  repeat(1, 1fr);
+  }
+  .footer_socio{
+    grid-column: auto;
   }
 }

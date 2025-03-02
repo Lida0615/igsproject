@@ -1,44 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IGS Project</title>
-    <link rel="stylesheet" href="./css/main.css "/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="./css/main.css " />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body id='start'>
   <div class="menu_nav">
-    <div class="left-menu-block menu" id="menu">
-      <div style="--i:6;" class="menu-block--items"><a href="#start" class="menu-link menu-text"><span></span>Главная</a></div>
-      <div style="--i:5;" class="menu-block--items"><a href="#services" class="menu-link menu-text"><span></span>Наши услуги</a></div>
-      <div style="--i:4;" class="menu-block--items"><a href="#portfolio" class="menu-link menu-text"><span></span>Портфолио</a></div>
-      <div style="--i:3;" class="menu-block--items"><a href="#reviews" class="menu-link menu-text"><span></span>Отзывы</a></div>
-      <div style="--i:2;" class="menu-block--items"><a href="#FAQ" class="menu-link menu-text"><span></span>FAQ</a></div>
-      <div style="--i:1;" class="menu-block--items"><a href="#contact" class="menu-link menu-text"><span></span>Контакты</a></div>
-    </div>
+    <nav class="left-menu-block menu" id="menu">
+      <div style="--i:6;" class="menu-block--items"><a href="#start"
+          class="menu-link menu-text"><span></span>Главная</a></div>
+      <div style="--i:5;" class="menu-block--items"><a href="#services" class="menu-link menu-text"><span></span>Наши
+          услуги</a></div>
+      <div style="--i:4;" class="menu-block--items"><a href="#portfolio"
+          class="menu-link menu-text"><span></span>Портфолио</a></div>
+      <div style="--i:3;" class="menu-block--items"><a href="#reviews"
+          class="menu-link menu-text"><span></span>Отзывы</a></div>
+      <div style="--i:2;" class="menu-block--items"><a href="#FAQ" class="menu-link menu-text"><span></span>FAQ</a>
+      </div>
+      <div style="--i:1;" class="menu-block--items"><a href="#contact"
+          class="menu-link menu-text"><span></span>Контакты</a></div>
+    </nav>
     <button class="menu-btn">> </button>
-      
-</div>
+
+  </div>
 
   <header id="header">
 
-    <!-- <strong>Инновационные решения для вашего бизнеса</strong>
-<h1>Профессиональная веб-разработка: от дизайна до запуска</h1> -->
 
-    <canvas id="star-sky"></canvas>
+    <canvas id="star-sky">
 
+    </canvas>
+    <div class="wrapper">
+
+      <strong>Инновационные решения для вашего бизнеса</strong>
+      <h1>Профессиональная веб-разработка: от дизайна до запуска</h1>
+      <button class="order_btn button">Заказать проект</button>
+    </div>
+    <div class="header_topbar">
+      <a href="/"><img src="./img/IGS.svg" alt="logo"></a>
+      <div class="socio">
+        <a href="#"><img src="./img/tel.svg" alt=""> +7 495 001-15-25</a>
+        <a href="#"><img src="./img/whatsApp.svg" alt=""></a>
+        <a href="#"><img src="./img/teleg.svg" alt=""></a>
+      </div>
+    </div>
   </header>
 
   <div class="wrapper">
     <main>
       <div class="blobs-container"></div>
-      <section id='services' class="services section" >
+      <section id='services' class="services section">
         <h2>Наши услуги</h2>
         <div class="services_items">
           <div class="services_item">
@@ -302,9 +320,9 @@
             <div class="tab" data-category="Многостраничный сайт">Многостраничный сайт</div>
             <div class="tab" data-category="Корпоративный сайт">Корпоративный сайт</div>
             <div class="tab" data-category="Интернет-магазин">Интернет-магазин</div>
-        </div>
-    
-        <div class="content" id="portfolio1"></div>
+          </div>
+
+          <div class="content" id="portfolio1"></div>
 
         </div>
 
@@ -340,62 +358,63 @@
         <h2>Категории</h2>
         <div class="categories_items">
 
-       
-        <div class='categories_item'>
-          <div class="categories_left">
-            <h3>Одностраничный сайт</h3>
-            <p>Сайт-визитка/сайт-портфолио/промо-сайт, быстрый способ донесения пользы продукта/услуги</p>
+
+          <div class='categories_item'>
+            <div class="categories_left">
+              <h3>Одностраничный сайт</h3>
+              <p>Сайт-визитка/сайт-портфолио/промо-сайт, быстрый способ донесения пользы продукта/услуги</p>
+            </div>
+            <div class="categories_right">
+              <span>от 25 000 ₽</span>
+              <span>срок разработки: 10–15 дней</span>
+            </div>
           </div>
-          <div class="categories_right">
-            <span>от 25 000 ₽</span>
-            <span>срок разработки: 10–15 дней</span>
+          <div class='categories_item'>
+            <div class="categories_left">
+              <h3>Многостраничный сайт</h3>
+              <p>Сайт, отвечающий фирменному стилю вашей компании, позволяет разместить большое количество информации
+                в пределах одного сайта</p>
+            </div>
+            <div class="categories_right">
+              <span>от 45 000 ₽</span>
+              <span>срок разработки: от 14 дней</span>
+            </div>
+          </div>
+          <div class='categories_item'>
+            <div class="categories_left">
+              <h3>Интернет-магазин</h3>
+              <p>Сайт для продажи товаров/услуг с функциями корзины, избранного, оплаты, доставки и др.5−20 страниц,
+                до 100 товаров</p>
+            </div>
+            <div class="categories_right">
+              <span>от 50 000 ₽</span>
+              <span>срок разработки: 10–15 дней</span>
+            </div>
+          </div>
+          <div class='categories_item'>
+            <div class="categories_left">
+              <h3>Сайт-визитка</h3>
+              <p>Модернизация дизайна сайта путём аудита старого сайта и конкурентного анализа, улучшение структуры,
+                функционала и контента
+            </div>
+            <div class="categories_right">
+              <span>от 30 000 ₽</span>
+              <span>срок разработки: 15–20 дней</span>
+            </div>
+          </div>
+          <div class='categories_item'>
+            <div class="categories_left">
+              <h3>Корпоративный сайт</h3>
+              <p>Шаблон сайта в фирменном стиле вашей компании. если нет фир. стиля — не проблема! сделаем
+                универсальнный
+                шаблон</p>
+            </div>
+            <div class="categories_right">
+              <span>от 30 000 ₽</span>
+              <span>срок разработки: 15–20 дней</span>
+            </div>
           </div>
         </div>
-        <div class='categories_item'>
-          <div class="categories_left">
-            <h3>Многостраничный сайт</h3>
-            <p>Сайт, отвечающий фирменному стилю вашей компании, позволяет разместить большое количество информации
-              в пределах одного сайта</p>
-          </div>
-          <div class="categories_right">
-            <span>от 45 000 ₽</span>
-            <span>срок разработки: от 14 дней</span>
-          </div>
-        </div>
-        <div class='categories_item'>
-          <div class="categories_left">
-            <h3>Интернет-магазин</h3>
-            <p>Сайт для продажи товаров/услуг с функциями корзины, избранного, оплаты, доставки и др.5−20 страниц,
-              до 100 товаров</p>
-          </div>
-          <div class="categories_right">
-            <span>от 50 000 ₽</span>
-            <span>срок разработки: 10–15 дней</span>
-          </div>
-        </div>
-        <div class='categories_item'>
-          <div class="categories_left">
-            <h3>Сайт-визитка</h3>
-            <p>Модернизация дизайна сайта путём аудита старого сайта и конкурентного анализа, улучшение структуры,
-              функционала и контента
-          </div>
-          <div class="categories_right">
-            <span>от 30 000 ₽</span>
-            <span>срок разработки: 15–20 дней</span>
-          </div>
-        </div>
-        <div class='categories_item'>
-          <div class="categories_left">
-            <h3>Корпоративный сайт</h3>
-            <p>Шаблон сайта в фирменном стиле вашей компании. если нет фир. стиля — не проблема! сделаем универсальнный
-              шаблон</p>
-          </div>
-          <div class="categories_right">
-            <span>от 30 000 ₽</span>
-            <span>срок разработки: 15–20 дней</span>
-          </div>
-        </div>
-      </div>
       </section>
       <section class="descrText">
         <div class="descrText_left">
@@ -447,42 +466,42 @@
           <form class="form-container">
             <input type="text" placeholder="Ваше имя">
             <select>
-                <option>Позвонить</option>
-                <option>Telegram</option>
-                <option>WhatsApp</option>
+              <option>Позвонить</option>
+              <option>Telegram</option>
+              <option>WhatsApp</option>
             </select>
-            <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="+7(000)000-00-00" />
+            <input type="tel" name="phone" id="phone" placeholder="+7(000)000-00-00" />
             <input type="email" placeholder="Email">
             <!--  -->
             <div class="checkbox-wrapper-23">
-                <input type="checkbox" id="check-23"/>
-                <label for="check-23" >
-                  <svg viewBox="0,0,50,50">
-                    <path d="M5 30 L 20 45 L 45 5"></path>
-                  </svg>
-                  
-                </label>
-                Я соглашаюсь с политикой конфиденциальности.
-              </div>
+              <input type="checkbox" id="check-23" />
+              <label for="check-23" class="label-23
+              ">
+                <svg viewBox="0,0,50,50">
+                  <path d="M5 30 L 20 45 L 45 5"></path>
+                </svg>
+                <span>
+
+                  Я соглашаюсь с политикой конфиденциальности.
+                </span>
+              </label>
+            
+            </div>
             <!--  -->
-           
+
             <button>Отправить</button>
-        </form>
+          </form>
         </div>
       </section>
       <section id='reviews' class="reviews">
-      <a href="#">
-        <img src="./img/beget_ban.jpg" alt="">
+        <a href="#">
+          <img src="./img/beget_ban.jpg" alt="">
 
-      </a>
-      <a href="#">
+        </a>
+        <a href="#">
 
-        <img src="./img/YouDo_ban.jpg" alt="">
-      </a>
+          <img src="./img/YouDo_ban.jpg" alt="">
+        </a>
       </section>
     </main>
   </div>
@@ -490,24 +509,24 @@
     <div class="wrapper">
       <div class="footer_wrap">
         <div class="footer_left">
-          <a href="">LOGO
-            <img src="" alt="">
+          <a href="">
+            <img src="./img/IGS.svg" alt="logo">
           </a>
           <p>Профессиональная веб-разработка: от дизайна до запуска</p>
         </div>
-       
-          <ul  class="footer_menu">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Наши услуги</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-    
+
+        <ul class="footer_menu">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Наши услуги</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+
         <div class="footer_socio">
           <a href="tel:722828828282">+7 230 823 8412</a>
-          <div> 
+          <div>
             <a href="#"><img src="./img/Group (1).svg" alt=""></a>
             <a href="#"><img src="./img/telegram.svg" alt=""></a>
             <a href="#"><img src="./img/Group (2).svg" alt=""></a>
@@ -517,12 +536,49 @@
       </div>
     </div>
   </footer>
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+        <button class="popup-close" id="popupClose">X</button>
+        <div id='contact' class='contact'>
+          <h2>Обсудим ваш проект?</h2>
+          <div class="contact_wrapp">
+            <p>Заполните форму. Мы свяжемся с вами в ближайшее рабочее время</p>
+            <form class="form-container">
+              <input type="text" placeholder="Ваше имя">
+              <select>
+                <option>Позвонить</option>
+                <option>Telegram</option>
+                <option>WhatsApp</option>
+              </select>
+              <input type="tel" name="phone2" id="phone" placeholder="+7(000)000-00-00" />
+              <input type="email" placeholder="Email" name="email2">
+              <!--  -->
+              <div class="checkbox-wrapper-23">
+                <input type="checkbox" id="check-2" name="checkbox2"/>
+                <label for="check-2" class="label-23
+                ">
+                  <svg viewBox="0,0,50,50">
+                    <path d="M5 30 L 20 45 L 45 5"></path>
+                  </svg>
+                  <span>
   
+                    Я соглашаюсь с политикой конфиденциальности.
+                  </span>
+                </label>
+              
+              </div>
+              <!--  -->
+  
+              <button>Отправить</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
 
-  <!-- <script src='./js/app.js'></script> -->
-<!-- <script src="./js/tabs.js"></script> -->
+  <script src='./js/app.js'></script>
+  <script src='./js/burger.js'></script>
   <script src='js/stars.js'></script>
-  <script src='js/burger.js'></script>
 </body>
 
 </html>

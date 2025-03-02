@@ -1,5 +1,5 @@
 .contact {
-  display: none;
+  /* display: none; */
 }
 .contact_wrapp {
   display: flex;
@@ -28,7 +28,7 @@ input {
 }
 input,
 select {
-  width: 100%;
+  /* width: 100%; */
   padding: 30px 120px 20px 20px;
 
   border: none;
@@ -83,24 +83,31 @@ button:hover {
 }
 
 .checkbox-wrapper-23 input + label {
-  display: block;
+  display: flex;
+  align-items: center;
   border: 2px solid #ffffff;
   width: 18px;
   height: 18px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
+  position: relative;
+  span{
+    position: absolute;
+    width: max-content;
+    margin-left: 30px;
+  }
 }
 
 .checkbox-wrapper-23 input + label:active {
   transform: scale(1.05);
-  border-radius: 12px;
+  border-radius: 5px;
 }
 
 .checkbox-wrapper-23 input + label svg {
   pointer-events: none;
   padding: 5%;
-  margin-bottom: 5px;
+  /* margin-bottom: 12px; */
 }
 
 .checkbox-wrapper-23 input + label svg path {
@@ -113,11 +120,30 @@ button:hover {
   stroke-dashoffset: 101;
   transition: all 250ms cubic-bezier(1, 0, 0.37, 0.91);
 }
-
+.label-23{
+  display: flex;
+}
 @media (max-width: 1024px) {
   .content.active {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+  }
+  .contact_wrapp{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    p{
+      font-size: 24px;
+      text-align: justify;
+    }
+  }
+  .checkbox-wrapper-23 input + label {
+   
+    span{
+     
+      max-width: 500px;
+   
+    }
   }
 }
 

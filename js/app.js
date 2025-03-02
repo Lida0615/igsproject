@@ -43,7 +43,7 @@ function renderPortfolio(portfolio, selectedCategory = "all") {
 
       const title = document.createElement("div");
       title.classList.add("portfolio-title");
-      title.textContent = item.title || "Без названия";
+      title.textContent = item.name || "Без названия";
 
       const category = document.createElement("div");
       category.classList.add("portfolio-category");
@@ -87,39 +87,76 @@ document.getElementById("categoryTabs").addEventListener("click", event => {
     renderPortfolio(portfolioData, event.target.dataset.category);
   }
 });
-
-// burger
-(function () {
-  const menu = document.getElementById("menu");
+// menu
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.querySelector(".menu");
   const menuBtn = document.querySelector(".menu-btn");
-  const menuLinks = document.querySelectorAll(".menu-link");
+  const servicesSection = document.getElementById("services");
 
-  function toggleMenu() {
-    menu.classList.toggle("active");
+  function handleResize() {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth > 1700) {
+          menu.classList.remove("hidden", "open");
+          menuBtn.style.display = "none";
+          window.removeEventListener("scroll", handleScroll);
+      } else if (screenWidth >= 1500 && screenWidth <= 1700) {
+          menu.classList.remove("hidden");
+          menuBtn.style.display = "none";
+          window.addEventListener("scroll", handleScroll);
+      } else {
+          menu.classList.add("hidden");
+          menuBtn.style.display = "block";
+          window.removeEventListener("scroll", handleScroll);
+      }
   }
 
-  function closeMenuAndScroll(event) {
-    event.preventDefault();
-    const targetId = this.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
+  function handleScroll() {
+      if (window.innerWidth >= 1500 && window.innerWidth <= 1700) {
+          const servicesPosition = servicesSection.getBoundingClientRect().top + window.scrollY;
+          const scrollPosition = window.scrollY;
 
-    if (targetElement) {
-      menu.classList.remove("active");
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth",
-      });
-    }
+          if (scrollPosition >= servicesPosition) {
+              menu.classList.add("hidden");
+              menuBtn.style.display = "block";
+          } else {
+              menu.classList.remove("hidden");
+              menuBtn.style.display = "none";
+          }
+      }
   }
 
-  function closeMenuOnClickOutside(event) {
-    if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-      menu.classList.remove("active");
-    }
-  }
 
-  menuBtn.addEventListener("click", toggleMenu);
-  menuLinks.forEach(link => link.addEventListener("click", closeMenuAndScroll));
-  document.addEventListener("click", closeMenuOnClickOutside);
-})();
+  menuBtn.addEventListener("click", function () {
+      menu.classList.toggle("hidden"); 
+  });
 
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("scroll", handleScroll);
+  handleResize(); 
+});
+
+
+// 
+document.addEventListener("DOMContentLoaded", function () {
+  const orderBtn = document.querySelector(".order_btn"); // Кнопка открытия
+  const popupOverlay = document.getElementById("popupOverlay"); // Затемненный фон popup
+  const popupClose = document.getElementById("popupClose"); // Кнопка закрытия X
+
+  // Открытие popup
+  orderBtn.addEventListener("click", function () {
+      popupOverlay.classList.add("active");
+  });
+
+  // Закрытие popup на кнопку X
+  popupClose.addEventListener("click", function () {
+      popupOverlay.classList.remove("active");
+  });
+
+  // Закрытие popup при клике на затемненный фон
+  popupOverlay.addEventListener("click", function (event) {
+      if (event.target === popupOverlay) {
+          popupOverlay.classList.remove("active");
+      }
+  });
+});
