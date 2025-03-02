@@ -6,7 +6,7 @@
             <stop offset="25%" style="stop-color:#5a00c7;stop-opacity:1" />
             <stop offset="50%" style="stop-color:#2e3cff;stop-opacity:1" />
             <stop offset="75%" style="stop-color:#2e3cff;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#38ff3f;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#525dff;stop-opacity:1" />
         </linearGradient>
     </defs>
     <g id="IconSvg_bgCarrier" stroke-width="0"></g>
