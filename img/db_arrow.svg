@@ -12,7 +12,7 @@
         <filter id="shadow">
             <feOffset in="SourceAlpha" dx="15" dy="0" result="offsetShadow" />
             <feGaussianBlur in="offsetShadow" result="blurShadow" >
-                <animate attributeName="stdDeviation" values="5;50;5" dur="2.5s" repeatCount="indefinite" />
+                <animate id="shadowAnimation" attributeName="stdDeviation" values="5;50;5" dur="2.5s" repeatCount="indefinite" />
             </feGaussianBlur>
             <feFlood flood-color="magenta" result="colorShadow" />
             <feComposite in="colorShadow" in2="blurShadow" operator="in" result="coloredShadow" />

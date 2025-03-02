@@ -147,10 +147,10 @@ a.menu-text {
   width: 36px;
   color: white;
   border: none;
-  padding: 10px;
+  /*padding: 10px;*/
   cursor: pointer;
   display: none;
-  background: rgba(0, 0 , 0, 0) url("../img/db_arrow.svg");
+  background: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1700px) {
