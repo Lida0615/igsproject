@@ -126,8 +126,9 @@ a.menu-text {
   top: 50%;
   transform: translate(0, -50%);
  display: flex;
+  align-items: center;
  gap: 20px;
-  width: 250px;
+  width: 270px;
   
   transition: transform 0.3s ease-in-out;
 }
@@ -141,14 +142,15 @@ a.menu-text {
 }
 
 .menu-btn {
-  margin-left: 20px;
-  height: min-content;
-  background: #444;
+  /*margin-left: 20px;*/
+  height: 36px;
+  width: 36px;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
-  display: none; 
+  display: none;
+  background: rgba(0, 0 , 0, 0) url("../img/db_arrow.svg");
 }
 
 @media (max-width: 1700px) {

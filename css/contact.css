@@ -60,7 +60,7 @@ input:focus-within {
   cursor: pointer;
 }
 button:hover {
-  background: #57008a;
+  /*background: #57008a;*/
 }
 /* checkbox */
 .checkbox-wrapper-23 {
